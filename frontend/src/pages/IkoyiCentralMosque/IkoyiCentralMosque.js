@@ -11,17 +11,17 @@ const IkoyiCentralMosque = () => {
         </div>
       </header>
 
-      <main className="container mx-auto py-10 px-4">
+      <main className="py-10">
         <section
-          className="py-20 text-center bg-cover bg-center"
-          style={{ backgroundImage: `url(${image1})` }}
+          className="w-screen h-40vh bg-cover bg-center flex items-center justify-center"
+          style={{ backgroundImage: `url(${image1})`, height: '40vh' }}
         >
-          <div className="container mx-auto">
-            <h2 className="text-4xl font-bold text-white">Welcome to Ikoyi Central Mosque</h2>
-          </div>
+          <h2 className="text-4xl font-bold text-white bg-black bg-opacity-50 px-4 py-2 rounded">
+            Welcome to Ikoyi Central Mosque
+          </h2>
         </section>
 
-        <section className="py-20">
+        <section className="w-screen py-20">
           <div className="container mx-auto px-4 md:px-0">
             <h2 className="text-4xl font-bold text-center mb-12">Events and Announcements</h2>
             <p className="text-lg leading-relaxed">
@@ -30,7 +30,7 @@ const IkoyiCentralMosque = () => {
           </div>
         </section>
 
-        <section className="py-20 bg-gray-200">
+        <section className="w-screen py-20 bg-gray-200">
           <div className="container mx-auto px-4 md:px-0">
             <h2 className="text-4xl font-bold text-center mb-12">Words of Wisdom</h2>
             <p className="text-lg leading-relaxed text-center max-w-3xl mx-auto">
@@ -39,7 +39,7 @@ const IkoyiCentralMosque = () => {
           </div>
         </section>
 
-        <section className="py-20">
+        <section className="w-screen py-20">
           <div className="container mx-auto px-4 md:px-0">
             <h2 className="text-4xl font-bold text-center mb-12">Services Offered</h2>
             <p className="text-lg leading-relaxed">
@@ -48,7 +48,7 @@ const IkoyiCentralMosque = () => {
           </div>
         </section>
 
-        <section className="py-20 bg-gray-200">
+        <section className="w-screen py-20 bg-gray-200">
           <div className="container mx-auto px-4 md:px-0">
             <h2 className="text-4xl font-bold text-center mb-12">Contact Information</h2>
             <div className="text-center mb-8">
@@ -89,7 +89,7 @@ const IkoyiCentralMosque = () => {
         </section>
       </main>
 
-      <footer className="bg-gray-800 text-white py-4">
+      <footer className="w-screen bg-gray-800 text-white py-4">
         <div className="container mx-auto text-center px-4 md:px-0">
           &copy; 2024 Bureau for Islamic Education. All rights reserved.
         </div>
