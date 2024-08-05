@@ -1,12 +1,11 @@
 import React from 'react';
-import bfie1 from '../../assets/bfie1.jpeg';
-import bfie2 from '../../assets/bfie2.jpeg';
-import bfie3 from '../../assets/bfie3.jpeg';
+import image1 from '../../assets/bfie1.jpeg';
+import ApprovedDocuments from '../../components/ApprovedDocuments';
 
 const Home = () => {
   return (
     <div className="bg-gray-100">
-      <header className="bg-gradient-to-r from-purple-500 to-pink-500 text-white py-6">
+      <header className="bg-blue-800 text-white py-6 sticky top-0 z-50">
         <div className="container mx-auto text-center">
           <h1 className="text-4xl font-bold">Bureau for Islamic Education</h1>
           <p className="mt-2 text-lg">Empowering through knowledge and faith</p>
@@ -14,100 +13,69 @@ const Home = () => {
       </header>
 
       <main className="container mx-auto py-10 px-4">
-        <section className="text-center py-20 bg-gradient-to-r from-green-400 to-blue-500 text-white">
-          <div className="container mx-auto">
-            <h1 className="text-5xl font-bold mb-4">Main Hero Message to Sell Yourself!</h1>
-            <p className="text-lg mb-8">Sub-hero message, not too long and not too short. Make it just right!</p>
-            <button className="bg-white text-green-500 font-semibold py-2 px-4 rounded-full">Subscribe</button>
-          </div>
+        <section className="py-20 text-center">
+          <img src={image1} alt="Landing" className="w-full h-auto rounded-lg shadow-md mx-auto" />
         </section>
 
         <section className="py-20">
           <div className="container mx-auto">
-            <h2 className="text-4xl font-bold text-center mb-12">About Us</h2>
-            <div className="flex flex-wrap -mx-4">
-              <div className="w-full md:w-1/2 px-4 mb-8 md:mb-0">
-                <img src={bfie1} alt="About Us" className="w-full h-auto rounded-lg shadow-md"/>
-              </div>
-              <div className="w-full md:w-1/2 px-4">
-                <p className="text-lg leading-relaxed">
-                  Welcome to the Bureau for Islamic Education. We are dedicated to providing quality education and fostering a deep understanding of Islamic values and principles. Our mission is to educate and inspire individuals through a curriculum that integrates academic excellence and spiritual growth. Our board of trustees comprises distinguished individuals committed to guiding our organization towards achieving its goals.
-                </p>
-              </div>
-            </div>
+            <h2 className="text-4xl font-bold text-center mb-12">Brief History</h2>
+            <p className="text-lg leading-relaxed">
+              The concept of the BUREAU FOR ISLAMIC EDUCATION started as a school for Islamic Education (Madarasatul Nuril Islam Society) targeted to educate women living in Ikoyi and its environs in 1983 at No. 2 Glover Road, Ikoyi, Lagos. The Bureau for Islamic Education was duly registered at the Corporate Affairs Commission on the 21st November 1991 with a Certificate of Registration No. 6487 and a NINE (9) Member Board of Trustees. Before the death of Alhaji Abdulkadir Ahmed in 1993, he declared and dedicated the property at No. 17 Ruxton Road Ikoyi Lagos as WAQAF bequeathed to the Muslim Ummah.
+            </p>
           </div>
         </section>
+
+        <ApprovedDocuments />
 
         <section className="py-20 bg-gray-200">
           <div className="container mx-auto text-center">
-            <h2 className="text-4xl font-bold mb-8">Our Mission and Objectives</h2>
+            <h2 className="text-4xl font-bold mb-8">Vision, Mission, and Strategic Objectives</h2>
             <p className="text-lg max-w-2xl mx-auto mb-8">
-              Our mission is to educate and inspire individuals through a curriculum that integrates academic excellence and spiritual growth. We strive to create an environment that nurtures the holistic development of each student, fostering both intellectual and spiritual growth.
-            </p>
-            <div className="flex justify-center">
-              <button className="bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold py-2 px-4 rounded-full">Learn More</button>
-            </div>
-          </div>
-        </section>
-
-        <section className="py-20">
-          <div className="container mx-auto">
-            <h2 className="text-4xl font-bold text-center mb-12">Board of Trustees</h2>
-            <p className="text-center max-w-2xl mx-auto">
-              Our board of trustees comprises distinguished individuals committed to guiding our organization towards achieving its goals.
+              The Bureau for Islamic Education is a socio-religious and benevolent organization with the fundamental objective of promoting and propagating the true teachings of Islam by educating/enlightening Muslims and fostering friendship, cooperation, and understanding among Muslims and between Muslims and adherents of other faiths. These objectives are achieved through the establishment of schools, building of mosques, social rehabilitation, and empowerment of vulnerable individuals, and more.
             </p>
           </div>
         </section>
 
-        <section className="py-20 bg-gray-200">
-          <div className="container mx-auto">
-            <h2 className="text-4xl font-bold text-center mb-12">Approved Working Documents</h2>
-            <p className="text-center max-w-2xl mx-auto">
-              Explore our approved working documents that outline our policies, procedures, and educational frameworks.
-            </p>
-          </div>
-        </section>
-
-        <section className="py-20">
-          <div className="container mx-auto">
-            <h2 className="text-4xl font-bold text-center mb-12">Prayer Schedule</h2>
-            <p className="text-center max-w-2xl mx-auto">
-              Stay updated with our daily prayer schedule and join our community in worship and reflection.
-            </p>
-          </div>
-        </section>
-
-        <section className="py-20 bg-gray-200">
-          <div className="container mx-auto">
-            <h2 className="text-4xl font-bold text-center mb-12">Donations/Support</h2>
-            <p className="text-center max-w-2xl mx-auto">
-              Your support is vital to our mission. Learn how you can contribute to our cause and make a difference.
-            </p>
-          </div>
-        </section>
-
-        <section className="py-20">
-          <div className="container mx-auto">
-            <h2 className="text-4xl font-bold text-center mb-12">Gallery</h2>
-            <div className="flex flex-wrap -mx-4">
-              <div className="w-full md:w-1/3 px-4 mb-8 md:mb-0">
-                <img src={bfie1} alt="Gallery Image 1" className="w-full h-auto rounded-lg shadow-md"/>
+        <section className="py-20 bg-blue-100 rounded-lg mx-4 md:mx-0">
+          <div className="container mx-auto text-center">
+            <h2 className="text-4xl font-bold mb-12">Donations and Support</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left px-4">
+              <div className="p-4 bg-white rounded-lg shadow-md flex items-center justify-center text-center">
+                <div>
+                  <h3 className="text-2xl font-bold mb-2">Maintenance & Operations</h3>
+                  <p>Union Bank: 0006648320</p>
+                  <p>Lotus Bank: 1003580434</p>
+                </div>
               </div>
-              <div className="w-full md:w-1/3 px-4 mb-8 md:mb-0">
-                <img src={bfie2} alt="Gallery Image 2" className="w-full h-auto rounded-lg shadow-md"/>
+              <div className="p-4 bg-white rounded-lg shadow-md flex items-center justify-center text-center">
+                <div>
+                  <h3 className="text-2xl font-bold mb-2">Projects</h3>
+                  <p>Union Bank: 0037173446</p>
+                  <p>Lotus Bank: 1003580355</p>
+                </div>
               </div>
-              <div className="w-full md:w-1/3 px-4 mb-8 md:mb-0">
-                <img src={bfie3} alt="Gallery Image 3" className="w-full h-auto rounded-lg shadow-md"/>
+              <div className="p-4 bg-white rounded-lg shadow-md flex items-center justify-center text-center">
+                <div>
+                  <h3 className="text-2xl font-bold mb-2">Ramadan Programs / Special Purposes</h3>
+                  <p>Lotus Bank: 1003580513</p>
+                </div>
+              </div>
+              <div className="p-4 bg-white rounded-lg shadow-md flex items-center justify-center text-center">
+                <div>
+                  <h3 className="text-2xl font-bold mb-2">Scholarship</h3>
+                  <p>Lotus Bank: 1003580719</p>
+                </div>
+              </div>
+              <div className="p-4 bg-white rounded-lg shadow-md flex items-center justify-center text-center">
+                <div>
+                  <h3 className="text-2xl font-bold mb-2">Zakkat / Zakkat-ul-Fitr</h3>
+                  <p>Lotus Bank: 1003580661</p>
+                  <p>Union Bank: 0193836571</p>
+                </div>
               </div>
             </div>
-          </div>
-        </section>
-
-        <section className="py-20 bg-gradient-to-r from-blue-500 to-green-400 text-white text-center">
-          <div className="container mx-auto">
-            <h2 className="text-4xl font-bold mb-4">Call to Action</h2>
-            <p className="text-lg mb-8">Main Hero Message to sell yourself!</p>
-            <button className="bg-white text-blue-500 font-semibold py-2 px-4 rounded-full">Action!</button>
+            <p className="mt-4 text-lg font-semibold">All Accounts Name: Bureau for Islamic Education</p>
           </div>
         </section>
       </main>
