@@ -1,31 +1,33 @@
 import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';  // Import Link from react-router-dom
+import { Link } from 'react-router-dom';
 import image1 from '../../assets/bfie1.jpeg';
 import ApprovedDocuments from '../../components/ApprovedDocuments';
 
 const Home = () => {
   useEffect(() => {
     const container = document.getElementById('scroll-container');
-    const content = container.innerHTML;
-    container.innerHTML += content; // Duplicate the content
+    if (container) {
+      const content = container.innerHTML;
+      container.innerHTML += content; // Duplicate the content
 
-    const scrollWidth = container.scrollWidth / 2;
-    let scrollPos = 0;
+      const scrollWidth = container.scrollWidth / 2;
+      let scrollPos = 0;
 
-    const scrollContent = () => {
-      if (scrollPos >= scrollWidth) {
-        scrollPos = 0;
-      } else {
-        scrollPos += 1;
-      }
-      container.scrollTo({
-        left: scrollPos,
-        behavior: 'smooth',
-      });
-    };
+      const scrollContent = () => {
+        if (scrollPos >= scrollWidth) {
+          scrollPos = 0;
+        } else {
+          scrollPos += 1;
+        }
+        container.scrollTo({
+          left: scrollPos,
+          behavior: 'smooth',
+        });
+      };
 
-    const interval = setInterval(scrollContent, 20);
-    return () => clearInterval(interval);
+      const interval = setInterval(scrollContent, 20);
+      return () => clearInterval(interval);
+    }
   }, []);
 
   return (
@@ -70,6 +72,92 @@ const Home = () => {
           </div>
         </section>
 
+        <section className="w-screen py-10 md:py-20 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="flex flex-wrap justify-center md:justify-between items-center">
+              <div className="w-full md:w-1/2 p-4">
+                <img src={image1} alt="Video Placeholder" className="w-full h-auto rounded-lg shadow-md" />
+              </div>
+              <div className="w-full md:w-1/2 p-4 text-left md:text-left">
+                <h2 className="text-2xl md:text-4xl font-bold mb-4">In The Name Of Allah The Beneficent The Merciful</h2>
+                <p className="text-base md:text-lg leading-relaxed mb-4">
+                  Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin. This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin. This is Photoshop's version of Lorem Ipsum.
+                </p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="flex items-center">
+                    <div className="bg-green-500 text-white p-3 rounded-full mr-4">
+                      <i className="fas fa-eye fa-2x"></i>
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-bold">Our Vision</h3>
+                      <p className="text-gray-700">Nibh vel velit auctor aliquet. Aenean itudin.</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center">
+                    <div className="bg-green-500 text-white p-3 rounded-full mr-4">
+                      <i className="fas fa-flag fa-2x"></i>
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-bold">Our Mission</h3>
+                      <p className="text-gray-700">Nibh vel velit auctor aliquet. Aenean itudin.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="w-screen py-10 md:py-20 bg-gray-50">
+          <div className="container mx-auto text-center">
+            <h2 className="text-2xl md:text-4xl font-bold mb-6 md:mb-12">Prayer Schedule</h2>
+            <div className="flex justify-center flex-wrap">
+              <div className="p-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/6">
+                <div className="bg-gray-200 p-4 rounded-lg shadow-md">
+                  <h3 className="text-xl font-bold">Dawn Prayer</h3>
+                  <p className="text-2xl text-green-500 font-semibold">Fajr</p>
+                  <p className="text-lg text-gray-700">4:01 am</p>
+                </div>
+              </div>
+              <div className="p-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/6">
+                <div className="bg-gray-200 p-4 rounded-lg shadow-md">
+                  <h3 className="text-xl font-bold">Sunrise Time</h3>
+                  <p className="text-2xl text-green-500 font-semibold">Zohar</p>
+                  <p className="text-lg text-gray-700">1:30 AM</p>
+                </div>
+              </div>
+              <div className="p-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/6">
+                <div className="bg-gray-200 p-4 rounded-lg shadow-md">
+                  <h3 className="text-xl font-bold">Afternoon</h3>
+                  <p className="text-2xl text-green-500 font-semibold">Asar</p>
+                  <p className="text-lg text-gray-700">5:30 PM</p>
+                </div>
+              </div>
+              <div className="p-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/6">
+                <div className="bg-gray-200 p-4 rounded-lg shadow-md">
+                  <h3 className="text-xl font-bold">Sunset Prayer</h3>
+                  <p className="text-2xl text-green-500 font-semibold">Maghrib</p>
+                  <p className="text-lg text-gray-700">7:15 PM</p>
+                </div>
+              </div>
+              <div className="p-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/6">
+                <div className="bg-gray-200 p-4 rounded-lg shadow-md">
+                  <h3 className="text-xl font-bold">Evening Prayer</h3>
+                  <p className="text-2xl text-green-500 font-semibold">Isha</p>
+                  <p className="text-lg text-gray-700">9:00 PM</p>
+                </div>
+              </div>
+              <div className="p-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/6">
+                <div className="bg-gray-200 p-4 rounded-lg shadow-md">
+                  <h3 className="text-xl font-bold">Sunrise Time</h3>
+                  <p className="text-2xl text-green-500 font-semibold">Kudba</p>
+                  <p className="text-lg text-gray-700">2:00 PM</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <ApprovedDocuments />
 
         <section className="w-screen py-10 md:py-20 bg-gray-200">
@@ -110,57 +198,6 @@ const Home = () => {
               </div>
             </div>
             <p className="mt-4 text-base md:text-lg font-semibold">All Accounts Name: Bureau for Islamic Education</p>
-          </div>
-        </section>
-
-        <section className="w-screen py-10 md:py-20 bg-gray-50">
-          <div className="container mx-auto text-center">
-            <h2 className="text-2xl md:text-4xl font-bold mb-6 md:mb-12">Prayer Schedule</h2>
-            <div className="relative overflow-hidden">
-              <div id="scroll-container" className="flex space-x-8 animate-scroll">
-                <div className="min-w-max bg-gray-100 p-4 rounded-lg shadow-md">
-                  <h3 className="text-xl md:text-2xl font-bold">Fajr</h3>
-                  <p className="text-base md:text-lg">5:00 AM</p>
-                </div>
-                <div className="min-w-max bg-gray-100 p-4 rounded-lg shadow-md">
-                  <h3 className="text-xl md:text-2xl font-bold">Dhuhr</h3>
-                  <p className="text-base md:text-lg">12:30 PM</p>
-                </div>
-                <div className="min-w-max bg-gray-100 p-4 rounded-lg shadow-md">
-                  <h3 className="text-xl md:text-2xl font-bold">Asr</h3>
-                  <p className="text-base md:text-lg">3:45 PM</p>
-                </div>
-                <div className="min-w-max bg-gray-100 p-4 rounded-lg shadow-md">
-                  <h3 className="text-xl md:text-2xl font-bold">Maghrib</h3>
-                  <p className="text-base md:text-lg">6:15 PM</p>
-                </div>
-                <div className="min-w-max bg-gray-100 p-4 rounded-lg shadow-md">
-                  <h3 className="text-xl md:text-2xl font-bold">Isha</h3>
-                  <p className="text-base md:text-lg">7:30 PM</p>
-                </div>
-                {/* Duplicate for seamless scrolling */}
-                <div className="min-w-max bg-gray-100 p-4 rounded-lg shadow-md">
-                  <h3 className="text-xl md:text-2xl font-bold">Fajr</h3>
-                  <p className="text-base md:text-lg">5:00 AM</p>
-                </div>
-                <div className="min-w-max bg-gray-100 p-4 rounded-lg shadow-md">
-                  <h3 className="text-xl md:text-2xl font-bold">Dhuhr</h3>
-                  <p className="text-base md:text-lg">12:30 PM</p>
-                </div>
-                <div className="min-w-max bg-gray-100 p-4 rounded-lg shadow-md">
-                  <h3 className="text-xl md:text-2xl font-bold">Asr</h3>
-                  <p className="text-base md:text-lg">3:45 PM</p>
-                </div>
-                <div className="min-w-max bg-gray-100 p-4 rounded-lg shadow-md">
-                  <h3 className="text-xl md:text-2xl font-bold">Maghrib</h3>
-                  <p class="text-base md:text-lg">6:15 PM</p>
-                </div>
-                <div className="min-w-max bg-gray-100 p-4 rounded-lg shadow-md">
-                  <h3 className="text-xl md:text-2xl font-bold">Isha</h3>
-                  <p class="text-base md:text-lg">7:30 PM</p>
-                </div>
-              </div>
-            </div>
           </div>
         </section>
       </main>
