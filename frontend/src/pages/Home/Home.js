@@ -35,11 +35,11 @@ const Home = () => {
             <img src={image1} alt="Logo" className="h-8" />
             <h1 className="text-xl md:text-2xl font-bold text-gray-800">Bureau for Islamic Education</h1>
           </div>
-          <nav className="flex space-x-2 md:space-x-4 mt-2 md:mt-0 w-full md:w-auto justify-center md:justify-end">
-            <a href="#" className="text-gray-800 hover:text-blue-500">Home</a>
+          <nav className="flex flex-wrap space-x-2 md:space-x-4 mt-2 md:mt-0 w-full md:w-auto justify-center md:justify-end">
+            {/* <a href="#" className="text-gray-800 hover:text-blue-500">Home</a>
             <a href="#" className="text-gray-800 hover:text-blue-500">About</a>
             <a href="#" className="text-gray-800 hover:text-blue-500">Services</a>
-            <a href="#" className="text-gray-800 hover:text-blue-500">Contact</a>
+            <a href="#" className="text-gray-800 hover:text-blue-500">Contact</a> */}
           </nav>
         </div>
       </header>
@@ -68,29 +68,7 @@ const Home = () => {
           </div>
         </section>
 
-        <section className="w-screen py-10 md:py-20 bg-white">
-          <div className="container mx-auto text-center">
-            <h2 className="text-2xl md:text-4xl font-bold mb-6 md:mb-12">Approved Working Documents</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="p-6 bg-gray-100 rounded-lg shadow-md">
-                <h3 className="text-xl md:text-2xl font-bold mb-2">Bureau Constitution</h3>
-                <button className="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600">View & Download</button>
-              </div>
-              <div className="p-6 bg-gray-100 rounded-lg shadow-md">
-                <h3 className="text-xl md:text-2xl font-bold mb-2">Conditions</h3>
-                <button className="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600">View & Download</button>
-              </div>
-              <div className="p-6 bg-gray-100 rounded-lg shadow-md">
-                <h3 className="text-xl md:text-2xl font-bold mb-2">Rules and Regulations</h3>
-                <button className="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600">View & Download</button>
-              </div>
-              <div className="p-6 bg-gray-100 rounded-lg shadow-md">
-                <h3 className="text-xl md:text-2xl font-bold mb-2">Standards</h3>
-                <button className="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600">View & Download</button>
-              </div>
-            </div>
-          </div>
-        </section>
+        <ApprovedDocuments />
 
         <section className="w-screen py-10 md:py-20 bg-gray-200">
           <div className="container mx-auto text-center">
@@ -189,8 +167,8 @@ const Home = () => {
         <div className="container mx-auto text-center">
           <p>&copy; 2024 Bureau for Islamic Education. All rights reserved.</p>
           <div className="flex justify-center space-x-4 mt-4">
-            <a href="#" className="text-gray-400 hover:text-white">Privacy Policy</a>
-            <a href="#" className="text-gray-400 hover:text-white">Terms of Service</a>
+            {/* <a href="#" className="text-gray-400 hover:text-white">Privacy Policy</a>
+            <a href="#" className="text-gray-400 hover:text-white">Terms of Service</a> */}
           </div>
         </div>
       </footer>
