@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';  // Import Link from react-router-dom
 import image1 from '../../assets/bfie1.jpeg';
 import ApprovedDocuments from '../../components/ApprovedDocuments';
 
@@ -36,10 +37,7 @@ const Home = () => {
             <h1 className="text-xl md:text-2xl font-bold text-gray-800">Bureau for Islamic Education</h1>
           </div>
           <nav className="flex flex-wrap space-x-2 md:space-x-4 mt-2 md:mt-0 w-full md:w-auto justify-center md:justify-end">
-            {/* <a href="#" className="text-gray-800 hover:text-blue-500">Home</a>
-            <a href="#" className="text-gray-800 hover:text-blue-500">About</a>
-            <a href="#" className="text-gray-800 hover:text-blue-500">Services</a>
-            <a href="#" className="text-gray-800 hover:text-blue-500">Contact</a> */}
+            {/* Add your navigation links here */}
           </nav>
         </div>
       </header>
@@ -53,8 +51,12 @@ const Home = () => {
             <h2 className="text-2xl md:text-4xl font-bold text-white">Welcome to Bureau for Islamic Education</h2>
             <p className="text-sm md:text-lg text-white mt-2">Empowering through knowledge and faith</p>
             <div className="mt-4 flex flex-col md:flex-row justify-center space-y-2 md:space-y-0 md:space-x-4">
-              <button className="bg-green-500 text-white px-6 py-2 rounded-full hover:bg-green-600">Learn More</button>
-              <button className="bg-white text-green-500 px-6 py-2 rounded-full hover:bg-gray-100">Subscribe</button>
+              <Link to="/ikoyi-central-mosque" className="bg-green-500 text-white px-6 py-2 rounded-full hover:bg-green-600">
+                Ikoyi Central Mosque
+              </Link>
+              <Link to="/nuril-islam-school" className="bg-white text-green-500 px-6 py-2 rounded-full hover:bg-gray-100">
+                Nuril Islam School
+              </Link>
             </div>
           </div>
         </section>
@@ -151,11 +153,11 @@ const Home = () => {
                 </div>
                 <div className="min-w-max bg-gray-100 p-4 rounded-lg shadow-md">
                   <h3 className="text-xl md:text-2xl font-bold">Maghrib</h3>
-                  <p className="text-base md:text-lg">6:15 PM</p>
+                  <p class="text-base md:text-lg">6:15 PM</p>
                 </div>
                 <div className="min-w-max bg-gray-100 p-4 rounded-lg shadow-md">
                   <h3 className="text-xl md:text-2xl font-bold">Isha</h3>
-                  <p className="text-base md:text-lg">7:30 PM</p>
+                  <p class="text-base md:text-lg">7:30 PM</p>
                 </div>
               </div>
             </div>
