@@ -63,12 +63,19 @@ const Home = () => {
           </div>
         </section>
 
-        <section className="w-screen py-10 md:py-20 text-center bg-gray-50">
-          <div className="container mx-auto px-4">
-            <h2 className="text-2xl md:text-4xl font-bold mb-6 md:mb-12">Brief History</h2>
-            <p className="text-base md:text-lg leading-relaxed max-w-3xl mx-auto">
-              The concept of the BUREAU FOR ISLAMIC EDUCATION started as a school for Islamic Education (Madarasatul Nuril Islam Society) targeted to educate women living in Ikoyi and its environs in 1983 at No. 2 Glover Road, Ikoyi, Lagos. The Bureau for Islamic Education was duly registered at the Corporate Affairs Commission on the 21st November 1991 with a Certificate of Registration No. 6487 and a NINE (9) Member Board of Trustees. Before the death of Alhaji Abdulkadir Ahmed in 1993, he declared and dedicated the property at No. 17 Ruxton Road Ikoyi Lagos as WAQAF bequeathed to the Muslim Ummah.
-            </p>
+        <section className="w-screen py-10 md:py-20 bg-gray-50">
+          <div className="container mx-auto text-center">
+            <h2 className="text-2xl md:text-4xl font-bold mb-6 md:mb-12 text-green-600">Brief History</h2>
+            <div className="flex flex-col md:flex-row items-center">
+              <div className="w-full md:w-1/2 p-4">
+                <img src={image1} alt="History" className="w-full h-auto rounded-lg shadow-md" />
+              </div>
+              <div className="w-full md:w-1/2 p-4">
+                <p className="text-base md:text-lg leading-relaxed text-left">
+                  The concept of the BUREAU FOR ISLAMIC EDUCATION started as a school for Islamic Education (Madarasatul Nuril Islam Society) targeted to educate women living in Ikoyi and its environs in 1983 at No. 2 Glover Road, Ikoyi, Lagos. The Bureau for Islamic Education was duly registered at the Corporate Affairs Commission on the 21st November 1991 with a Certificate of Registration No. 6487 and a NINE (9) Member Board of Trustees. Before the death of Alhaji Abdulkadir Ahmed in 1993, he declared and dedicated the property at No. 17 Ruxton Road Ikoyi Lagos as WAQAF bequeathed to the Muslim Ummah.
+                </p>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -81,7 +88,7 @@ const Home = () => {
               <div className="w-full md:w-1/2 p-4 text-left md:text-left">
                 <h2 className="text-2xl md:text-4xl font-bold mb-4">In The Name Of Allah The Beneficent The Merciful</h2>
                 <p className="text-base md:text-lg leading-relaxed mb-4">
-                  Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin. This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin. This is Photoshop's version of Lorem Ipsum.
+                  The Bureau for Islamic Education is a socio-religious and benevolent organization with the fundamental objective of promoting and propagating the true teachings of Islam by educating/enlightening Muslims and fostering friendship, cooperation, and understanding among Muslims and between Muslims and adherents of other faiths.
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="flex items-center">
@@ -90,7 +97,7 @@ const Home = () => {
                     </div>
                     <div>
                       <h3 className="text-lg font-bold">Our Vision</h3>
-                      <p className="text-gray-700">Nibh vel velit auctor aliquet. Aenean itudin.</p>
+                      <p className="text-gray-700">The Bureau for Islamic Education is a socio-religious and benevolent organization with the fundamental objective of promoting and propagating the true teachings of Islam by educating/enlightening Muslims and fostering friendship, cooperation, and understanding among Muslims and between Muslims and adherents of other faiths.</p>
                     </div>
                   </div>
                   <div className="flex items-center">
@@ -99,7 +106,7 @@ const Home = () => {
                     </div>
                     <div>
                       <h3 className="text-lg font-bold">Our Mission</h3>
-                      <p className="text-gray-700">Nibh vel velit auctor aliquet. Aenean itudin.</p>
+                      <p className="text-gray-700">Our objectives are achieved through the establishment of schools, building of mosques, social rehabilitation, and empowerment of vulnerable individuals, and more.</p>
                     </div>
                   </div>
                 </div>
@@ -111,46 +118,46 @@ const Home = () => {
         <section className="w-screen py-10 md:py-20 bg-gray-50">
           <div className="container mx-auto text-center">
             <h2 className="text-2xl md:text-4xl font-bold mb-6 md:mb-12">Prayer Schedule</h2>
-            <div className="flex justify-center flex-wrap">
+            <div id="scroll-container" className="flex space-x-4 overflow-x-auto">
               <div className="p-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/6">
                 <div className="bg-gray-200 p-4 rounded-lg shadow-md">
                   <h3 className="text-xl font-bold">Dawn Prayer</h3>
                   <p className="text-2xl text-green-500 font-semibold">Fajr</p>
-                  <p className="text-lg text-gray-700">4:01 am</p>
+                  <p className="text-lg text-gray-700">5:29 am</p>
                 </div>
               </div>
               <div className="p-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/6">
                 <div className="bg-gray-200 p-4 rounded-lg shadow-md">
                   <h3 className="text-xl font-bold">Sunrise Time</h3>
-                  <p className="text-2xl text-green-500 font-semibold">Zohar</p>
-                  <p className="text-lg text-gray-700">1:30 AM</p>
+                  <p className="text-2xl text-green-500 font-semibold">Duhur</p>
+                  <p className="text-lg text-gray-700">12:52 PM</p>
                 </div>
               </div>
               <div className="p-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/6">
                 <div className="bg-gray-200 p-4 rounded-lg shadow-md">
                   <h3 className="text-xl font-bold">Afternoon</h3>
                   <p className="text-2xl text-green-500 font-semibold">Asar</p>
-                  <p className="text-lg text-gray-700">5:30 PM</p>
+                  <p className="text-lg text-gray-700">4:10 PM</p>
                 </div>
               </div>
               <div className="p-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/6">
                 <div className="bg-gray-200 p-4 rounded-lg shadow-md">
                   <h3 className="text-xl font-bold">Sunset Prayer</h3>
                   <p className="text-2xl text-green-500 font-semibold">Maghrib</p>
-                  <p className="text-lg text-gray-700">7:15 PM</p>
+                  <p className="text-lg text-gray-700">9:03 PM</p>
                 </div>
               </div>
               <div className="p-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/6">
                 <div className="bg-gray-200 p-4 rounded-lg shadow-md">
-                  <h3 className="text-xl font-bold">Evening Prayer</h3>
+                  <h3 className="text-xl font-bold">Night Prayer</h3>
                   <p className="text-2xl text-green-500 font-semibold">Isha</p>
-                  <p className="text-lg text-gray-700">9:00 PM</p>
+                  <p className="text-lg text-gray-700">8:11 PM</p>
                 </div>
               </div>
               <div className="p-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/6">
                 <div className="bg-gray-200 p-4 rounded-lg shadow-md">
-                  <h3 className="text-xl font-bold">Sunrise Time</h3>
-                  <p className="text-2xl text-green-500 font-semibold">Kudba</p>
+                  <h3 className="text-xl font-bold">Sunrise</h3>
+                  <p className="text-2xl text-green-500 font-semibold">Shuruq</p>
                   <p className="text-lg text-gray-700">2:00 PM</p>
                 </div>
               </div>
@@ -171,33 +178,58 @@ const Home = () => {
 
         <section className="w-screen py-10 md:py-20 bg-white">
           <div className="container mx-auto text-center">
-            <h2 className="text-2xl md:text-4xl font-bold mb-6 md:mb-12">Donations and Support</h2>
+            <h2 className="text-2xl md:text-4xl font-bold mb-6 md:mb-12 text-green-600">Donations and Support</h2>
+            <p className="mt-4 text-base md:text-lg font-semibold mb-6">All Accounts Name: Bureau for Islamic Education</p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="p-6 bg-gray-100 rounded-lg shadow-md">
-                <h3 className="text-xl md:text-2xl font-bold mb-2">Maintenance & Operations</h3>
-                <p>Union Bank: 0006648320</p>
-                <p>Lotus Bank: 1003580434</p>
+                <div className="flex items-center mb-4">
+                  <div className="bg-green-500 text-white p-3 rounded-full mr-4">
+                    <i className="fas fa-cog fa-2x"></i>
+                  </div>
+                  <h3 className="text-xl md:text-2xl font-bold">Maintenance & Operations</h3>
+                </div>
+                <p className="text-gray-700">Union Bank: 0006648320</p>
+                <p className="text-gray-700">Lotus Bank: 1003580434</p>
               </div>
               <div className="p-6 bg-gray-100 rounded-lg shadow-md">
-                <h3 className="text-xl md:text-2xl font-bold mb-2">Projects</h3>
-                <p>Union Bank: 0037173446</p>
-                <p>Lotus Bank: 1003580355</p>
+                <div className="flex items-center mb-4">
+                  <div className="bg-green-500 text-white p-3 rounded-full mr-4">
+                    <i className="fas fa-project-diagram fa-2x"></i>
+                  </div>
+                  <h3 className="text-xl md:text-2xl font-bold">Projects</h3>
+                </div>
+                <p className="text-gray-700">Union Bank: 0037173446</p>
+                <p className="text-gray-700">Lotus Bank: 1003580355</p>
               </div>
               <div className="p-6 bg-gray-100 rounded-lg shadow-md">
-                <h3 className="text-xl md:text-2xl font-bold mb-2">Ramadan Programs / Special Purposes</h3>
-                <p>Lotus Bank: 1003580513</p>
+                <div className="flex items-center mb-4">
+                  <div className="bg-green-500 text-white p-3 rounded-full mr-4">
+                    <i className="fas fa-moon fa-2x"></i>
+                  </div>
+                  <h3 className="text-xl md:text-2xl font-bold">Ramadan Programs / Special Purposes</h3>
+                </div>
+                <p className="text-gray-700">Lotus Bank: 1003580513</p>
               </div>
               <div className="p-6 bg-gray-100 rounded-lg shadow-md">
-                <h3 className="text-xl md:text-2xl font-bold mb-2">Scholarship</h3>
-                <p>Lotus Bank: 1003580719</p>
+                <div className="flex items-center mb-4">
+                  <div className="bg-green-500 text-white p-3 rounded-full mr-4">
+                    <i className="fas fa-graduation-cap fa-2x"></i>
+                  </div>
+                  <h3 className="text-xl md:text-2xl font-bold">Scholarship</h3>
+                </div>
+                <p className="text-gray-700">Lotus Bank: 1003580719</p>
               </div>
               <div className="p-6 bg-gray-100 rounded-lg shadow-md">
-                <h3 className="text-xl md:text-2xl font-bold mb-2">Zakkat / Zakkat-ul-Fitr</h3>
-                <p>Lotus Bank: 1003580661</p>
-                <p>Union Bank: 0193836571</p>
+                <div className="flex items-center mb-4">
+                  <div className="bg-green-500 text-white p-3 rounded-full mr-4">
+                    <i className="fas fa-hand-holding-heart fa-2x"></i>
+                  </div>
+                  <h3 className="text-xl md:text-2xl font-bold">Zakkat / Zakkat-ul-Fitr</h3>
+                </div>
+                <p className="text-gray-700">Lotus Bank: 1003580661</p>
+                <p className="text-gray-700">Union Bank: 0193836571</p>
               </div>
             </div>
-            <p className="mt-4 text-base md:text-lg font-semibold">All Accounts Name: Bureau for Islamic Education</p>
           </div>
         </section>
       </main>
