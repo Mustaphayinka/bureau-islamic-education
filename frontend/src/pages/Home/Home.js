@@ -5,6 +5,8 @@ import image4 from '../../assets/bfie4.jpeg';
 import image5 from '../../assets/bfie5.jpeg';
 import image6 from '../../assets/bfie6.jpeg';
 import ApprovedDocuments from '../../components/ApprovedDocuments';
+import BriefHistory from '../../components/BriefHistory'; // Import the new component
+
 
 const Home = () => {
   useEffect(() => {
@@ -66,7 +68,11 @@ const Home = () => {
           </div>
         </section>
 
-        <section className="w-screen py-10 md:py-20 bg-gray-50">
+        <BriefHistory />
+
+
+
+        {/* <section className="w-screen py-10 md:py-20 bg-gray-50">
           <div className="container mx-auto text-center">
             <h2 className="text-2xl md:text-4xl font-bold mb-6 md:mb-12 text-green-600">Brief History</h2>
             <div className="flex flex-col md:flex-row items-center">
@@ -80,7 +86,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         <section className="w-screen py-10 md:py-20 bg-white">
           <div className="container mx-auto px-4">
