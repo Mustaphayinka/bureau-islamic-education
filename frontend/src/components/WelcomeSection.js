@@ -3,9 +3,8 @@ import { Link } from 'react-router-dom';
 
 import image3 from '../assets/bfie3.jpeg'; // Adjust the path as needed
 import image4 from '../assets/bfie4.jpeg'; // Adjust the path as needed
-import image10 from '../assets/bfie10.jpeg'; // Adjust the path as needed
 
-const images = [image4, image3, image10];
+const images = [image4, image3];
 
 const WelcomeSection = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
