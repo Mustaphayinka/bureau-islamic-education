@@ -1,5 +1,6 @@
 import React from 'react';
 // import { Link } from 'react-router-dom';
+import BoardOfTrustees from '../../components/BoardOfTrustees';
 import Header from '../../components/Header';
 import ApprovedDocuments from '../../components/ApprovedDocuments';
 import BriefHistory from '../../components/BriefHistory'; // Import the new component
@@ -17,6 +18,7 @@ const Home = () => {
         <WelcomeSection />
         <BriefHistory />
         <AboutSection />
+        <BoardOfTrustees />
         <PrayerSchedule />  {/* Ensure the PrayerSchedule component is included here */}
         <ApprovedDocuments />
         <DonationsSupport />
