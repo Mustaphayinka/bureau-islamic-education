@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import image5 from '../assets/bfie5.jpeg'; // Adjust the path as needed
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa'; // Importing icons for arrows
 
@@ -14,13 +14,22 @@ const PrayerSchedule = () => {
     { time: '2:00 PM', name: 'Shuruq', label: 'Sunrise' },
   ];
 
-  const prevSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === 0 ? prayers.length - 1 : prevIndex - 1));
-  };
-
-  const nextSlide = () => {
+  const nextSlide = useCallback(() => {
     setCurrentIndex((prevIndex) => (prevIndex === prayers.length - 1 ? 0 : prevIndex + 1));
-  };
+  }, [prayers.length]);
+
+  const prevSlide = useCallback(() => {
+    setCurrentIndex((prevIndex) => (prevIndex === 0 ? prayers.length - 1 : prevIndex - 1));
+  }, [prayers.length]);
+
+  // Automatically move to the next slide every 3 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextSlide();
+    }, 3000); // 3000ms = 3 seconds
+
+    return () => clearInterval(interval); // Clear interval on component unmount
+  }, [nextSlide]); // Include nextSlide in dependency array
 
   return (
     <section
