@@ -3,9 +3,9 @@ import React from 'react';
 const BoardOfTrustees = () => {
   return (
     <section className="w-screen py-10 md:py-20 bg-white">
-      <div className="container mx-auto text-center">
+      <div className="container mx-auto text-center px-4 md:px-8">
         <h2 className="text-2xl md:text-4xl font-bold mb-6 md:mb-12 text-green-600">Board of Trustees and Management Committee</h2>
-        <div className="text-left md:text-lg leading-relaxed space-y-4 max-w-4xl mx-auto">
+        <div className="text-left text-sm md:text-lg leading-relaxed space-y-4 max-w-4xl mx-auto">
           <p>
             The founding members of the Board of Trustees are Alhaji Abdulkadir Ahmed, Alhaji I.Y Abdullahi (SarkinBai,Gombe), Engineer Hamman A Tukur, Ambassador Adamu Muhammad, Alhaji Shehu Mohammad (Sarkin Shanu,Kano), Alhaji Mai Aliyu Muhammad, Alhaji Usman Bari, Alhaji Mustapha Muftau.
           </p>
