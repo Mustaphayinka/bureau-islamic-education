@@ -7,8 +7,8 @@ const ContactInformation = () => {
         <h2 className="text-2xl md:text-4xl font-bold mb-6 md:mb-12 text-green-600">Contact Information</h2>
         <div className="bg-white p-6 md:p-8 rounded-lg shadow-md">
           <div className="flex flex-col space-y-8 md:space-y-0 md:flex-row md:justify-between">
-            <div className="w-full md:w-1/3 flex items-start">
-              <div className="bg-green-500 text-white p-2 rounded-full mr-4">
+            <div className="w-full md:w-1/3 flex items-start space-x-2">
+              <div className="bg-green-500 text-white p-2 rounded-full">
                 <i className="fas fa-phone-alt fa-lg"></i>
               </div>
               <div>
@@ -16,23 +16,23 @@ const ContactInformation = () => {
                 <p className="text-gray-700 mt-2 text-sm md:text-base">+2347049216166 (Whatsapp/calls)</p>
               </div>
             </div>
-            <div className="w-full md:w-1/3 flex items-start">
-              <div className="bg-green-500 text-white p-2 rounded-full mr-4">
+            <div className="w-full md:w-1/3 flex items-start space-x-2">
+              <div className="bg-green-500 text-white p-2 rounded-full">
                 <i className="fas fa-envelope fa-lg"></i>
               </div>
               <div>
                 <h3 className="text-lg font-semibold">Write To Us</h3>
-                <p className="text-gray-700 mt-2 text-sm md:text-base">bureauforislamiceducation@gmail.com</p>
-                <p className="text-gray-700 mt-2 text-sm md:text-base">ikoyicentralmosque@gmail.com</p>
+                <p className="text-gray-700 mt-2 text-sm md:text-base break-words">bureauforislamiceducation@gmail.com</p>
+                <p className="text-gray-700 mt-2 text-sm md:text-base break-words">ikoyicentralmosque@gmail.com</p>
               </div>
             </div>
-            <div className="w-full md:w-1/3 flex items-start">
-              <div className="bg-green-500 text-white p-2 rounded-full mr-4">
+            <div className="w-full md:w-1/3 flex items-start space-x-2">
+              <div className="bg-green-500 text-white p-2 rounded-full">
                 <i className="fas fa-share-alt fa-lg"></i>
               </div>
               <div>
                 <h3 className="text-lg font-semibold">Follow Us</h3>
-                <div className="flex flex-wrap mt-2 space-x-2 md:space-x-4">
+                <div className="flex flex-wrap mt-2 space-x-2">
                   <a href="https://www.facebook.com/bfieikoyilagos?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer">
                     <i className="fab fa-facebook fa-lg" style={{ color: '#1877F2' }}></i>
                   </a>

@@ -2,6 +2,7 @@ import React from 'react';
 import MosqueHeader from '../../components/MosqueHeader';
 import MosqueWelcomeSection from '../../components/MosqueWelcomeSection';
 import EventsAndAnnouncements from '../../components/EventsAndAnnouncements';
+import EveningTable from  '../../components/EveningTable';
 import WordsOfWisdom from '../../components/WordsOfWisdom';
 import ServicesOffered from '../../components/ServicesOffered';
 import ContactInformation from '../../components/ContactInformation';
@@ -15,6 +16,7 @@ const IkoyiCentralMosque = () => {
         <MosqueWelcomeSection />
 
         <EventsAndAnnouncements />
+        <EveningTable />
 
         <WordsOfWisdom />
 
