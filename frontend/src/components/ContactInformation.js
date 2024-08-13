@@ -21,7 +21,7 @@ const ContactInformation = () => {
                 <i className="fas fa-envelope fa-lg"></i>
               </div>
               <div>
-                <h3 className="text-lg font-semibold">Write Us</h3>
+                <h3 className="text-lg font-semibold">Write To Us</h3>
                 <p className="text-gray-700 mt-2 text-sm md:text-base">bureauforislamiceducation@gmail.com</p>
                 <p className="text-gray-700 mt-2 text-sm md:text-base">ikoyicentralmosque@gmail.com</p>
               </div>
