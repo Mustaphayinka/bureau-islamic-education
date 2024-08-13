@@ -6,15 +6,17 @@ import NurilIslamSchool from './pages/NurilIslamSchool/NurilIslamSchool';
 
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/ikoyi-central-mosque" element={<IkoyiCentralMosque />} />
-          <Route path="/nuril-islam-school" element={<NurilIslamSchool />} />
-        </Routes>
-      </div>
-    </Router>
+    <div className="font-playfair">
+      <Router>
+        <div className="App">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/ikoyi-central-mosque" element={<IkoyiCentralMosque />} />
+            <Route path="/nuril-islam-school" element={<NurilIslamSchool />} />
+          </Routes>
+        </div>
+      </Router>
+    </div>
   );
 }
 
