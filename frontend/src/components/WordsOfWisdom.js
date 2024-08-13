@@ -12,7 +12,7 @@ const WordsOfWisdom = () => {
           <h2 className="text-2xl md:text-4xl font-bold mb-6 md:mb-12 text-green-600">Words of Wisdom</h2>
           <div className="text-base md:text-lg leading-relaxed text-center md:text-left max-w-3xl mx-auto md:mx-0 animate-scroll whitespace-normal mt-4">
             <p>
-              The best among you are those who have the best manners and character." - Prophet Muhammad (PBUH)
+              The best among you are those who have the best manners and character - Prophet Muhammad (PBUH) 
             </p>
           </div>
         </div>
