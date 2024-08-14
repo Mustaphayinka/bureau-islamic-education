@@ -37,7 +37,9 @@ const PrayerSchedule = () => {
       style={{ backgroundImage: `url(${image5})` }}
     >
       <div className="container mx-auto text-center bg-black bg-opacity-50 p-6 rounded-lg">
-        <h2 className="text-2xl md:text-4xl font-bold mb-6 md:mb-12 text-white">Prayer Schedule</h2>
+        <h2 className="text-2xl md:text-4xl font-bold mb-6 md:mb-12 text-white">
+          PRAYER TIME SCHEDULE @ IKOYI CENTRAL MOSQUE
+        </h2>
         <div className="relative w-full max-w-xl mx-auto">
           <div className="scroll-container flex whitespace-nowrap">
             <div className="scroll-item p-4 min-w-full">
