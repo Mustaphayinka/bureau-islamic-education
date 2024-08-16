@@ -11,7 +11,6 @@ const PrayerSchedule = () => {
     { time: '4:10 PM', name: 'Asar', label: 'Afternoon' },
     { time: '9:03 PM', name: 'Maghrib', label: 'Sunset' },
     { time: '8:11 PM', name: 'Isha', label: 'Night' },
-    { time: '2:00 PM', name: 'Shuruq', label: 'Sunrise' },
   ];
 
   const nextSlide = useCallback(() => {
