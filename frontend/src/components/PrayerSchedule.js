@@ -8,11 +8,11 @@ const PrayerSchedule = () => {
   const [dayAdjustment] = useState(0); // This can be adjusted manually
 
   const prayers = [
-    { time: '5:29 am', name: 'Fajr', label: 'Dawn' },
-    { time: '12:52 PM', name: 'Duhur', label: 'Sunrise' },
-    { time: '4:10 PM', name: 'Asar', label: 'Afternoon' },
-    { time: '9:03 PM', name: 'Maghrib', label: 'Sunset' },
-    { time: '8:11 PM', name: 'Isha', label: 'Night' },
+    { time: '5:30 am', name: 'Fajr', label: 'Dawn' },
+    { time: '12:45 PM', name: 'Duhur', label: 'Sunrise' },
+    { time: '3:50 PM', name: 'Asar', label: 'Afternoon' },
+    { time: 'Sunset', name: 'Maghrib', label: 'Sunset' },
+    { time: '8:00 PM', name: 'Isha', label: 'Night' },
   ];
 
   const gregorianDate = new Date().toLocaleDateString('en-US', {
