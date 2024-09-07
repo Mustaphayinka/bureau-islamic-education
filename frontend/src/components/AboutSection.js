@@ -21,7 +21,7 @@ const AboutSection = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-bold">Our Vision</h3>
-                  <p className="text-gray-700"> Teaching and propagating the basics and truth of the Islamic Religion </p>
+                  <p className="text-gray-700">Teaching and propagating the basics and truth of the Islamic Religion.</p>
                 </div>
               </div>
               <div className="flex items-center">
@@ -30,11 +30,22 @@ const AboutSection = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-bold">Our Mission</h3>
-                  <p className="text-gray-700">Harness resources ( Human, Financial, Materials etc) to teach and propagate Islam as well as to encourage non Muslims to see Islam as it is not necessary through the action or inaction of Muslims.</p>
+                  <p className="text-gray-700">Harness resources (Human, Financial, Materials, etc.) to teach and propagate Islam and encourage non-Muslims to see Islam as it is, not necessarily through the action or inaction of Muslims.</p>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+
+        {/* Strategic Objectives Section */}
+        <div className="mt-10">
+          <h3 className="text-xl md:text-3xl font-bold mb-6 text-green-600">Strategic Objectives</h3>
+          <ul className="list-disc list-inside text-base md:text-lg leading-relaxed text-gray-700 space-y-4">
+            <li>To educate and enlighten Muslims in Nigeria and around the world by propagating and spreading the true teachings of Islam as it is in the holy Qur'an and Sunnah of Prophet Muhammad SAW.</li>
+            <li>Promote friendship and cooperation between and among Muslims by providing a forum (Lectures, Seminars, Workshops, Conferences, etc.) for unity, understanding, exchange of views, and dissemination of Islamic knowledge among Muslims and, where necessary, between Muslims and other faiths.</li>
+            <li>Establishment of Islamic Centres (Schools, Libraries, and Mosques), Radio/TV stations, Hospitals/Clinics, and other facilities that will enhance the welfare of Muslims and the propagation of the Islamic Religion.</li>
+            <li>Work in partnership with similar organizations (Local and International) as well as Muslim countries to uplift Islam and Muslims in Nigeria and around the world.</li>
+          </ul>
         </div>
       </div>
     </section>
