@@ -21,7 +21,7 @@ const AboutSection = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-bold">Our Vision</h3>
-                  <p className="text-gray-700">To be a leading socio-religious organization that embodies the true teachings of Islam, fostering a harmonious and enlightened community through education, cooperation, and mutual understanding among Muslims and between Muslims and adherents of other faiths.</p>
+                  <p className="text-gray-700"> Teaching and propagating the basics and truth of the Islamic Religion </p>
                 </div>
               </div>
               <div className="flex items-center">
@@ -30,7 +30,7 @@ const AboutSection = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-bold">Our Mission</h3>
-                  <p className="text-gray-700">Our mission is to promote and propagate the authentic teachings of Islam by educating and enlightening Muslims, fostering friendship and cooperation, and building a supportive network through the establishment of schools, mosques, social rehabilitation programs, and empowerment initiatives for vulnerable individuals.</p>
+                  <p className="text-gray-700">Harness resources ( Human, Financial, Materials etc) to teach and propagate Islam as well as to encourage non Muslims to see Islam as it is not necessary through the action or inaction of Muslims.</p>
                 </div>
               </div>
             </div>
