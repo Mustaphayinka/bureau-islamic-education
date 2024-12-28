@@ -64,7 +64,7 @@ const GalleryComponent = () => {
               <div className="overflow-hidden rounded-lg shadow-lg">
                 <img
                   src={image}
-                  alt={`Gallery Image ${index + 1}`}
+                  alt={`Gallery item ${index + 1}`}
                   className="w-full h-64 object-cover transform hover:scale-105 transition-transform duration-300"
                 />
               </div>
