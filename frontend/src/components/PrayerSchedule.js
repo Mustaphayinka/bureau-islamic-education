@@ -8,10 +8,10 @@ const PrayerSchedule = () => {
   const [dayAdjustment] = useState(0); // This can be adjusted manually
 
   const prayers = [
-    { time: '5:30 am', name: 'Fajr', label: 'Dawn' },
-    { time: '12:45 PM', name: 'Duhur', label: 'Sunrise' },
-    { time: '3:50 PM', name: 'Asar', label: 'Afternoon' },
-    { time: 'Sunset', name: 'Maghrib', label: 'Sunset' },
+    { time: '5:45 am', name: 'Fajr', label: 'Dawn' },
+    { time: '1:00 PM', name: 'zhur', label: 'Sunrise' },
+    { time: '4:15 PM', name: 'Asri', label: 'Afternoon' },
+    { time: '6:46 PM', name: 'Maghrib', label: 'Sunset' },
     { time: '8:00 PM', name: 'Isha', label: 'Night' },
   ];
 
